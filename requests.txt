@@ -4,26 +4,23 @@ Aşağıdaki requestler sırayla çalıştırılabilir.
 localhost:8080/api/insertFlight
 
 {
-    "flightId": 1,
-    "ticketPrice": 10000,
-    "numberOfTickets": 5,
     "flightName": "PEGASUS-ILK-UCUS",
-    "route": {
-        "routeIdCompany": 1,
-        "departure": "ISTANBUL",
-        "destination": "IZMIR",
-        "routeName": "II-324"
+    "numberOfTickets": 5,
+    "ticketPrice" : 10000,
+    "flightCompany" :{
+	"flightCompanyName" : "PEGASUS"
     },
-    "flightCompany": {
-        "flightIdCompany": 1,
-        "flightCompanyName": "PEGASUS"
+    "route" :{
+	"destination" :"IZMIR",
+	"departure" : "ISTANBUL",
+	"routeName": "II-324"
     },
-    "airport": {
-        "airportName": "ATATURK",
-        "airportLocation": "ISTANBUL",
-        "airportUniqueName": 12341
-    },
-    "ticketModel": null
+    "airport":{
+	"airportUniqueName":12341,
+	"airportLocation":"ISTANBUL",
+	"airportName":"ATATURK"
+    }
+	    
 }
 
 -------------------------------------------------------------------
