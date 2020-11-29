@@ -98,8 +98,7 @@ public class Flight {
     @JoinColumn(name = "AIRPORT_NAME")
 	private Airport airport;
     
-	@OneToMany(mappedBy = "flight", cascade = CascadeType.ALL,
-            fetch = FetchType.EAGER)
+	@OneToMany(targetEntity = TicketModel.class,cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<TicketModel> ticketModel;
 
 	public List<TicketModel> getTicketModel() {
